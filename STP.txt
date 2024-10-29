@@ -5,16 +5,22 @@ Switch3
 問2
 switch1
 F0/1 DP ルートポートの対向ポートだから
-F0/2 RP 各スイッチに一つあるので
+F0/2 RP スイッチ3に通信する時ルートパスコスト的にF0/2のルートになるので
 
 Switch2
-F0/1 RP Switch3のE0/1がDPの為
-F0/2 BP RP.DPでもないので
+F0/1 RP Switch３に通信する時ルートパスコスト的にF0/1のルートになるので
+F0/2 BP ↓説明
 
 Switch3
-E0/1 DP Switch3がルートブリッヂの為
-E0/2 DP Switch3がルートブリッヂの為
+E0/1 DP Switch3がルートブリッジの為また、ルートポートの対向なので
+E0/2 DP Switch3がルートブリッジの為また、ルートポートの対向なので
 
 Switch4
-E0/1 BP  RPでもDPでもないので
-E0/2 RP Switch3のE0/2がDPのため
+E0/1 DP ↓説明
+E0/2 RP Switch3に通信する時Eルートパスコスト的にE0/２のルートになるので
+
+↓説明内容
+Switch２ーSwitch４の間には役割が何もないが、
+ブリッジプライオリティを見比べるとき8193のSwitch４がコストが低いのでSwitch4のE0/1がDPになり、
+Switch２のF0/2がBPになる。
+
