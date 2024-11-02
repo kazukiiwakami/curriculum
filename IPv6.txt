@@ -1,0 +1,11 @@
+(1)
+インターフェースID→
+A8 AA AA FF FE AA AA AA
+
+(2)
+インターフェースID→
+9A 76 54 FF FE 32 10 FE
+
+(3)→
+インターフェースID→
+FD FF FF FF FE FF FF FF
